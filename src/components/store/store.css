@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(161, 66, 66);
+}
+
+.merch-display-case{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.merch-item-display{
+    background-color: aqua;
+    padding: .5rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tl tr"
+    "bt bt"
+    
+    ;
+}
+
+.merch-cont-left{
+    grid: "tl";
+    width: 100%;    
+}
+
+.merch-cont-right{
+    grid: "tr";
+    width: 100%;
+}
+
+.merch-item-image{
+    width: 100%;
+}
+
+.merch-cont-bottom{
+    grid: "bt";
+    width: 100%;
+}
