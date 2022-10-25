@@ -16,22 +16,22 @@ body{
     border: 2px solid black;
     border-radius: .5rem;
     width: 30vw;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
     grid-template-areas: 
-    "tl tr"
-    "bt bt"
-    
-    ;
+    "tl  tr"
+    "btt btt" ;
 }
 
 .merch-cont-left{
-    grid: "tl";
+    grid-area: tl;
     width: 100%;    
 }
 
 .merch-cont-right{
-    grid: "tr";
+    grid-area: tr;
     width: 100%;
 }
 
@@ -40,6 +40,7 @@ body{
 }
 
 .merch-cont-bottom{
-    grid: "bt";
+    background-color: blue;
+    grid-area: btt;
     width: 100%;
 }
