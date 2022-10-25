@@ -30,8 +30,11 @@ electronics
  women's clothing
    
    {ProdData.map((item) => (<div className='merch-item-display'>
-   <div className='merch-cont-left'> <h2 className='merch-item-title'> {item.title}</h2>
-    <span className='merch-item-price'>{item.price}</span></div>
+   <div key={item.id} className='merch-cont-left'> <h2 className='merch-item-title'> {item.title}</h2>
+    <span className='merch-item-price'>{item.price}</span>
+    <span className='merch-item-rating'>{item.rating.rate} out of {item.rating.count}</span>    
+    
+    </div>
    <div className='merch-cont-right'><img className='merch-item-image' src={item.image} /></div>
    <div className='merch-cont-bottom'> <p>{item.description}</p></div>
   
