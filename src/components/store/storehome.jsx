@@ -6,14 +6,10 @@ import './store.css'
 
 const storehome = () => {
 console.log(ProdData)
-const imported = JSON.stringify(ProdData);
+// const imported = JSON.stringify(ProdData);
 // console.log(imported);
-
 // console.log(parsed);
-
 // async const pullData = get
-
-
 // ProdData.map((c)=>{
 //     console.log(c.category);
 // })
@@ -23,11 +19,13 @@ const imported = JSON.stringify(ProdData);
 
   return (
    <div className='merch-display-case'>
+   <p>
    Filter by Category?
    men's clothing
 jewelery
 electronics
  women's clothing
+ </p>
    
    {ProdData.map((item) => (<div className='merch-item-display'>
    <div key={item.id} className='merch-cont-left'> <h2 className='merch-item-title'> {item.title}</h2>
