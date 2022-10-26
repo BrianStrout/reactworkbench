@@ -1,8 +1,10 @@
 body{
     background-color: rgb(133, 255, 251);
+    
 }
 
 .outie{
+    opacity: 40%;
     width: 30px;
     height: 30px;
     border: 2px solid black;
@@ -15,16 +17,55 @@ body{
     align-items: center;
     background-color: azure;
 }
+.outie:hover{
+    opacity: 100%;
+}
 
 .store_regional_header{
     height: 50px;
     background-color: darkred;
+    padding: 0 1rem;
 }
 
 .online_header{
-    height: 125px;
+    height: 80px;
     background-color: violet;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-shadow: 0px 2px 5px rgb(151, 151, 151);
 }
+
+
+.store_online_logo_cont{
+    width: 4rem;
+}
+
+.store_online_logo{
+font-size: 3rem;
+
+}
+
+
+
+
+.store_desktop_link{
+padding: 1rem;
+
+}
+
+
+#search_input{
+    width: 30rem;
+    height: 1.5rem;
+}
+
+.sign_in_div{
+    display: flex;
+}
+
 
 
 
@@ -77,4 +118,11 @@ body{
     border-radius: .25rem;
     padding: .25rem;
     overflow: scroll;
+}
+
+
+.submit_btn{
+    margin-left: -50px;
+    height: 20px;
+    width: 50px;
 }

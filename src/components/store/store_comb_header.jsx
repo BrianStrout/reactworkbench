@@ -1,7 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Storeregionalheader from './storeregionalheader'
-import Onlineheader from './onlineheader'
+import Onlineheader from './store_onlineheader'
+import './store.css'
 
 const store_comb_header = () => {
   return (
