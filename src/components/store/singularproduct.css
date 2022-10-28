@@ -1,24 +1,53 @@
+.section-product{
+    max-width: 100%;
+    /* margin: 0 10% 0 10%; */
+    padding: 0 14%;
+    display: grid;
+    grid-template-columns: 10rem 1.2fr .8fr;
+    grid-template-areas: 
+    "header   header    header"
+    "photocat photomain details"
+    "deets    deets     deets"
+    ;
+}
+.merch-focus-title{
+    grid-area: header;
+    display: flex;
+    justify-content: start;
+   }
+
+.merch-alt-photo{
+    grid-area: photocat;
+    background-color: black;
+    opacity: 80%;
+}
 .merch-focus-image{
     /* width: 2rem; */
     opacity: 100%;
+    background-color: limegreen;
 }
 .focus-image{
-    width: 20rem;
+    grid-area: photomain;
+
+    width: 100%;
 }
 
-/* .merch-focus-title{
-
-}
-
-.merch-focus-price{
-
+.merch-focus-details{
+    background-color: blue;
+grid-area: details;
+/* width: 20rem; */
+display: flex;
+flex-direction: column;
+justify-content: start;
+text-align: left;
 }
 
 .merch-focus-description{
+    grid-area: deets;
 
 }
 
 .merch-focus-rating{
 
-} */
+}
 

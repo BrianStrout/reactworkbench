@@ -75,7 +75,11 @@ border-radius: .5rem;
     display: flex;
 }
 
-
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .flyer{
 
@@ -128,9 +132,16 @@ display: none;
     height: 100%;
 }
 
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+
 .merch-display-case{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10%;
+    grid-template-columns:  1fr 1fr 1fr;
 }
 
 
@@ -140,7 +151,7 @@ display: none;
     margin: 1rem;
     border: 2px solid black;
     border-radius: .5rem;
-    width: 30vw;
+    width: 20rem;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,6 +159,9 @@ display: none;
     grid-template-areas: 
     "tl  tr"
     "btt btt" ;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 .merch-cont-left{

@@ -12,12 +12,12 @@ const storelanding = () => {
 
 
     
-    <div>
+    <>
     <StoreCombHeader />
-    <section>
+   
       <Outlet />
-    </section>
-    </div>
+   
+    </>
   )
 }
 
