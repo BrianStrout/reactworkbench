@@ -1,3 +1,5 @@
+/* import { BsSearch } from 'react-icons/bs' */
+
 body{
     background-color: rgb(133, 255, 251);
     
@@ -41,6 +43,7 @@ body{
 
 .store_online_logo_cont{
     width: 4rem;
+   
 }
 
 .store_online_logo{
@@ -52,14 +55,20 @@ font-size: 3rem;
 
 
 .store_desktop_link{
-padding: 1rem;
+padding: 1rem 2rem;
+border-radius: .5rem;
 
 }
-
+.store_desktop_link:hover{
+    background-color: rgb(150, 150, 208);
+}
 
 #search_input{
     width: 30rem;
     height: 1.5rem;
+}
+#search_input::after{
+    content:"XX";
 }
 
 .sign_in_div{
@@ -68,9 +77,56 @@ padding: 1rem;
 
 
 
+.flyer{
+
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flyer_specific{
+    background-color: rgb(253, 230, 174);
+    width: 60%;
+    height: 60%;
+    border: 4px solid black;
+    border-radius: 1rem;
+
+}
+.close_flyer{
+   
+        opacity: 40%;
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: static;
+        left: 5px;
+        top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: azure;
+}
+.close_flyer:hover{
+opacity: 100%;
+}
+
+.closed_flyer{
+display: none;
+}
 
 
-
+.dimmer{
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0%;
+    width: 100%;
+    height: 100%;
+}
 
 .merch-display-case{
     display: grid;

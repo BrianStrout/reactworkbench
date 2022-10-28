@@ -7,16 +7,15 @@ console.log(merchCatalog[3]);
 
 const SingleProduct = () =>{
 const { productId } = useParams();
-console.log(productId)
-const focus = merchCatalog.find((product) => product.id === 1 );
-const { title, image, price, rating, description, } = focus;
+const { productIdConverted } = parseInt(productId);
 
-
+const focus = merchCatalog.find((product) => product.id == productId );
+const { title, image, price, rating, description, id } = focus;
 
 return(
         <section className='section-product'>
-        <div className='merch-focus-image'>
-         <img className='focus-image' src={image}/>
+<div className='merch-focus-image'>
+         <img className='focus-image' src={image} alt=""/>
         </div>
         <div className='merch-focus-title'>
         <h2> {title} </h2>
@@ -30,10 +29,9 @@ return(
         <div className='merch-focus-rating'>
         {rating.rate}{rating.count}
         </div>
+        <Link to='/'>back to products</Link>
+        
 
-
-
-        <Link to='/storehome'>back to products</Link>
         </section>
 
 )

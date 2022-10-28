@@ -10,7 +10,7 @@ const store_comb_header = () => {
     <div className='outie'>X</div>
         <Storeregionalheader />
         <Onlineheader />
-        <Outlet />
+ 
     
     
     </div>

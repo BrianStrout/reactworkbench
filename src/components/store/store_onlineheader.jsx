@@ -66,12 +66,19 @@ const Onlineheader = () => {
     <div className='store_desktop_link'><div className='store_desktop_link_inner'> What's New</div></div>
     <div className='store_desktop_link'><div className='store_desktop_link_inner'> Pickup & Delivery</div></div>
   
+
+  
     <input
    type="text"
    id='search_input'
    placeholder="Search here"
-   value="" />
+  //  value="" 
+  />
 
+
+
+
+<BsSearch />
 
 {/* <div>
             <Search
@@ -92,12 +99,14 @@ const Onlineheader = () => {
     onClick={handleChange}
     /> */}
     
+    <div className='store_desktop_link'>
     
-    <BsSearch />
     <div className='sign_in' id='sign_in_div'>
     <BsPersonCheck /> Sign In
-    </div>
+    </div></div>
+    <div className='store_desktop_link'>
     <BsCart />
+    </div>
 
     
     
